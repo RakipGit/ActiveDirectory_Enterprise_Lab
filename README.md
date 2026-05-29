@@ -119,87 +119,87 @@ The internal network was configured so the Windows 10 client could receive an IP
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
-### 1. Hyper-V VM Creation
+ 1. Hyper-V VM Creation
 
 ![Hyper-V VM Creation](images/hyperv-vm-creation.png)
 
-### 2. Windows Server 2019 Installation
+ 2. Windows Server 2019 Installation
 
 ![Windows Server Installation](images/windows-server-installation.png)
 
-### 3. Server Renamed to RAKIPDC
+ 3. Server Renamed to RAKIPDC
 
 ![Rename Server](images/rename-server-rakipdc.png)
 
-### 4. Static IP Configuration
+ 4. Static IP Configuration
 
 ![Static IP Configuration](images/static-ip-domain-controller.png)
 
-### 5. Installing Active Directory Domain Services
+ 5. Installing Active Directory Domain Services
 
 ![Install AD DS](images/install-ad-ds.png)
 
-### 6. Promoting the Server to Domain Controller
+ 6. Promoting the Server to Domain Controller
 
 ![Promote Domain Controller](images/promote-domain-controller.png)
 
-### 7. Creating the Domain rakip.com
+ 7. Creating the Domain rakip.com
 
 ![Create Domain](images/create-domain-rakip.png)
 
-### 8. Active Directory Users and Computers
+ 8. Active Directory Users and Computers
 
 ![ADUC](images/aduc-domain-ready.png)
 
-### 9. Creating Organizational Units and Users
+ 9. Creating Organizational Units and Users
 
 ![OU Users](images/create-ou-users.png)
 
-### 10. Adding User to Domain Admins
+ 10. Adding User to Domain Admins
 
 ![Domain Admins](images/domain-admins-user.png)
 
-### 11. Installing Routing and Remote Access
+ 11. Installing Routing and Remote Access
 
 ![Install RRAS](images/install-rras.png)
 
-### 12. Internal Hyper-V Switch Creation
+ 12. Internal Hyper-V Switch Creation
 
 ![Internal Switch](images/internal-hyperv-switch.png)
 
-### 13. Adding Internal Adapter to the Domain Controller
+ 13. Adding Internal Adapter to the Domain Controller
 
 ![Internal Adapter](images/add-internal-adapter.png)
 
-### 14. Configuring NAT/RRAS
+ 14. Configuring NAT/RRAS
 
 ![NAT RRAS](images/configure-nat-rras.png)
 
-### 15. DHCP Server Installation
+ 15. DHCP Server Installation
 
 ![Install DHCP](images/install-dhcp.png)
 
-### 16. DHCP Scope Configuration
+ 16. DHCP Scope Configuration
 
 ![DHCP Scope](images/dhcp-scope.png)
 
-### 17. Windows 10 Client VM Setup
+ 17. Windows 10 Client VM Setup
 
 ![Windows 10 Client](images/windows10-client-vm.png)
 
-### 18. Client Receiving DHCP Address
+ 18. Client Receiving DHCP Address
 
 ![Client DHCP](images/client-dhcp-ip.png)
 
-### 19. Internet Connectivity Test
+ 19. Internet Connectivity Test
 
 ![Ping Test](images/client-internet-ping.png)
 
-### 20. Domain Connectivity Test
+ 20. Domain Connectivity Test
 
 ![Domain Ping](images/client-domain-ping.png)
 
-### 21. Joining CLIENT1 to the Domain
+ 21. Joining CLIENT1 to the Domain
 
 ![Join Domain](images/client-join-domain.png)
 
