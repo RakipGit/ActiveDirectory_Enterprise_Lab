@@ -262,13 +262,11 @@ The internal network was configured so the Windows 10 client could receive an IP
 ## Tools & Technologies
 
 * Hyper-V
-* Windows Server 2019
-* Windows 10 Pro
-* Active Directory Domain Services
-* Active Directory Users and Computers
+* Windows Server 2019 & Windows 10 Pro
+* Active Directory Domain Services & Active Directory Users and Computers
 * DNS
 * DHCP Server
-* Routing and Remote Access Service
+* Routing and Remote Access Service 
 * NAT
 * Group Policy Management
 * PowerShell
@@ -276,11 +274,10 @@ The internal network was configured so the Windows 10 client could receive an IP
 * Windows File Sharing
 * Event Viewer
 * Windows Security Logs
-* Advanced Audit Policy Configuration
 
 ---
 
-## Key Security Concepts Demonstrated
+## Security Concepts Demonstrated
 
 * Active Directory domain deployment
 * Centralized identity and access management
@@ -293,7 +290,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 * Domain user and group administration
 * Bulk identity provisioning with PowerShell
 * Security groups for access control
-* RBAC-style permission management
+* RBAC permission management
 * NTFS permissions
 * Shared folder authorization
 * Least privilege access control
@@ -320,9 +317,7 @@ The monitoring focused on:
 * User management events
 * Group membership changes
 * File/share access activity
-
-This helped demonstrate how Windows administrators can use built-in logging to observe authentication activity and detect important changes inside an Active Directory environment.
-
+* 
 ---
 
 ## Insights & Lessons Learned
@@ -337,12 +332,6 @@ This helped demonstrate how Windows administrators can use built-in logging to o
 * Testing folder permissions from the client machine helped confirm the practical impact of access control decisions.
 * Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security-related configurations.
 * Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor logons, account changes, and group membership changes.
-
----
-
-## Disclaimer
-
-This project was created in an isolated lab environment for educational purposes. The configurations were implemented to practice Windows Server administration, Active Directory management, access control, Group Policy, and security monitoring concepts.
 
 ---
 
