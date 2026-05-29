@@ -8,7 +8,7 @@ A Windows Server lab that demonstrates the deployment and administration of an A
 
 ## Project Summary
 
-This project simulates a enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit and event monitoring. The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment.
+This project simulates a enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users with an Powershell script and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit and event monitoring. The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment.
 
 ---
 
