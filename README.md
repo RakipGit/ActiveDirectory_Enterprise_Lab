@@ -2,15 +2,15 @@
 
 # Active Directory Enterprise Lab: AD DS, NAT, DHCP, GPOs, RBAC File Shares and Security Auditing
 
-A hands-on Windows Server lab that demonstrates the deployment and administration of an enterprise-style Active Directory environment using Hyper-V, Windows Server 2019, Windows 10, AD DS, DNS, DHCP, NAT/RRAS, Group Policy, RBAC-style file sharing, and Windows security auditing.
+A Windows Server lab that demonstrates the deployment and administration of an Active Directory environment using Hyper-V, Windows Server 2019, Windows 10, AD DS, DNS, DHCP, NAT/RRAS, Group Policy, RBAC file sharing and Windows security auditing.
 
 ---
 
 ## Project Summary
 
-This project simulates a small enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit/event monitoring.
+This project simulates a enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit and event monitoring.
 
-The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment. The project covers both system administration and security administration concepts, including identity management, domain authentication, network segmentation, centralized policy enforcement, access control, and event log monitoring.
+The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment.
 
 ---
 
@@ -370,7 +370,7 @@ This helped demonstrate how Windows administrators can use built-in logging to o
 
 ## Disclaimer
 
-This project was created in an isolated lab environment for educational and portfolio purposes. The configurations were implemented to practice Windows Server administration, Active Directory management, access control, Group Policy, and security monitoring concepts.
+This project was created in an isolated lab environment for educational purposes. The configurations were implemented to practice Windows Server administration, Active Directory management, access control, Group Policy, and security monitoring concepts.
 
 ---
 
