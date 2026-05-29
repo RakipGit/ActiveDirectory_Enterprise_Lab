@@ -142,7 +142,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 
 ## Screenshots
 
-![Active Directory Lab Overview](images/Screenshot(79).png)
+![Active Directory Lab Overview](images/Screenshot (73).png)
 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
