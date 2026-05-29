@@ -2,7 +2,7 @@
 
 ## Active Directory Enterprise Lab: AD DS, NAT, DHCP, GPOs, RBAC File Shares and Security Auditing
 
-A Windows Server lab that demonstrates the deployment and administration of an Active Directory environment using Hyper-V, Windows Server 2019, Windows 10, AD DS, DNS, DHCP, NAT/RRAS, Group Policy, RBAC file sharing and Windows security auditing.
+A Windows Server lab that demonstrates the deployment and administration of an Active Directory environment using Hyper-V, Widnows Server 2019, AD DS, DNS, DHCP, NAT/RRAS, Group Policy, RBAC file sharing and Windows security auditing.
 
 ---
 
