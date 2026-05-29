@@ -36,10 +36,10 @@ The internal network was configured so the Windows 10 client could receive an IP
 
 ### 1. Hyper-V and Virtual Machine Setup
 
-* Created the lab environment using **Hyper-V**
+* Created the lab environment using Hyper-V
 * Downloaded Windows Server 2019 and Windows 10 ISOs
 * Created a Windows Server 2019 virtual machine
-* Installed Windows Server 2019 with **Desktop Experience**
+* Installed Windows Server 2019 with Desktop Experience
 * Created a Windows 10 Pro client virtual machine
 * Connected the Windows 10 client to the internal Hyper-V switch
 
@@ -47,20 +47,20 @@ The internal network was configured so the Windows 10 client could receive an IP
 
 * Renamed the Windows Server machine to `RAKIPDC`
 * Configured a static IP address on the server
-* Installed the **Active Directory Domain Services** role
+* Installed the Active Directory Domain Services role
 * Promoted the server to a Domain Controller
 
 ### 3. NAT/RRAS and Internal Networking
 
 * Added a second internal Hyper-V virtual switch network adapter to the Domain Controller
 * Configured the internal adapter with a separate private subnet
-* Installed and configured **Routing and Remote Access Service**
+* Installed and configured Routing and Remote Access Service
 * Enabled NAT so the internal Windows 10 client could access the internet through the Domain Controller
 * Verified connectivity from the client machine using cmd network tests
 
 ### 4. DHCP Configuration
 
-* Installed the **DHCP Server** role
+* Installed the DHCP Server role
 * Created a DHCP scope for the internal network
 * Configured the Domain Controller’s internal IP as the default gateway for clients
 * Activated the DHCP scope
@@ -77,7 +77,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 
 ### 6. Active Directory User and Group Management
 
-* Added an administrative user to the **Domain Admins** group
+* Added an administrative user to the Domain Admins group
 * Used a PowerShell script to bulk-create more than 1,000 users
 * Created Organizational Units inside Active Directory
 
@@ -93,7 +93,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 ### 8. Group Policy Configuration
 
 * Created Group Policy Objects using Group Policy Management
-* Configured a GPO to block access to **Control Panel** and **Settings** for selected users
+* Configured a GPO to block access to Control Panel and Settings for selected users
 * Configured a centralized wallpaper policy 
 * Configured screen saver settings
 * Enabled password protection for the screen saver
@@ -104,7 +104,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 ### 9. Security Auditing and Event Monitoring
 
 * Configured audit policies for security monitoring
-* Monitored authentication and account-related events in **Event Viewer**
+* Monitored authentication and account-related events in Event Viewer
 * Reviewed failed logon activity
 * Reviewed user and account changes
 * Reviewed group membership changes
