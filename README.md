@@ -8,28 +8,7 @@ A Windows Server lab that demonstrates the deployment and administration of an A
 
 ## Project Summary
 
-This project simulates a enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit and event monitoring.
-
-The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment.
-
----
-
-## Lab Objectives
-
-The main objectives of this project were to:
-
-* Build a functional Active Directory domain environment
-* Configure a Windows Server 2019 Domain Controller
-* Create a private internal network for domain-joined machines
-* Configure DHCP so clients receive IP settings automatically
-* Configure NAT/RRAS so internal clients can access the internet through the Domain Controller
-* Join a Windows 10 client machine to the domain
-* Automate user creation with PowerShell
-* Organize users and groups inside Active Directory
-* Implement RBAC-style access control using security groups and NTFS permissions
-* Configure shared folders for different departments
-* Apply Group Policy Objects to enforce user restrictions and desktop settings
-* Enable security auditing and monitor important Windows events through Event Viewer
+This project simulates a enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit and event monitoring. The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment.
 
 ---
 
