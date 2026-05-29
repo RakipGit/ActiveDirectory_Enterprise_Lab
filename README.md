@@ -353,53 +353,6 @@ This helped demonstrate how Windows administrators can use built-in logging to o
 
 ---
 
-## Repository Structure
-
-```text
-active-directory-enterprise-lab/
-│
-├── README.md
-│
-├── images/
-│   ├── ad-lab-overview.png
-│   ├── hyperv-vm-creation.png
-│   ├── windows-server-installation.png
-│   ├── rename-server-rakipdc.png
-│   ├── static-ip-domain-controller.png
-│   ├── install-ad-ds.png
-│   ├── promote-domain-controller.png
-│   ├── create-domain-rakip.png
-│   ├── aduc-domain-ready.png
-│   ├── create-ou-users.png
-│   ├── domain-admins-user.png
-│   ├── install-rras.png
-│   ├── internal-hyperv-switch.png
-│   ├── add-internal-adapter.png
-│   ├── configure-nat-rras.png
-│   ├── install-dhcp.png
-│   ├── dhcp-scope.png
-│   ├── windows10-client-vm.png
-│   ├── client-dhcp-ip.png
-│   ├── client-internet-ping.png
-│   ├── client-domain-ping.png
-│   ├── client-join-domain.png
-│   ├── dhcp-client-lease.png
-│   ├── bulk-users-powershell.png
-│   ├── ad-created-users.png
-│   ├── security-groups-rbac.png
-│   ├── shared-department-folders.png
-│   ├── ntfs-folder-permissions.png
-│   ├── authorized-folder-access.png
-│   ├── access-denied-folder.png
-│   ├── control-panel-settings-gpo.png
-│   ├── centralized-wallpaper-gpo.png
-│   ├── screen-lock-gpo.png
-│   ├── audit-policy-configuration.png
-│   └── event-viewer-security-logs.png
-```
-
----
-
 ## Insights & Lessons Learned
 
 * Building the environment from scratch helped me understand how Active Directory, DNS, DHCP, NAT, Group Policy, and Windows auditing work together in a domain network.
