@@ -37,7 +37,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 ### 1. Hyper-V and Virtual Machine Setup
 
 * Created the lab environment using **Hyper-V**
-* Downloaded Windows Server 2019 and Windows 10 installation media
+* Downloaded Windows Server 2019 and Windows 10 ISOs
 * Created a Windows Server 2019 virtual machine
 * Installed Windows Server 2019 with **Desktop Experience**
 * Created a Windows 10 Pro client virtual machine
@@ -49,63 +49,56 @@ The internal network was configured so the Windows 10 client could receive an IP
 * Configured a static IP address on the server
 * Installed the **Active Directory Domain Services** role
 * Promoted the server to a Domain Controller
-* Created a new forest and domain: `rakip.com`
-* Verified that AD DS and DNS were available after installation
 
 ### 3. NAT/RRAS and Internal Networking
 
-* Created an internal Hyper-V virtual switch
-* Added a second network adapter to the Domain Controller
+* Added a second internal Hyper-V virtual switch network adapter to the Domain Controller
 * Configured the internal adapter with a separate private subnet
 * Installed and configured **Routing and Remote Access Service**
 * Enabled NAT so the internal Windows 10 client could access the internet through the Domain Controller
-* Verified connectivity from the client machine using command-line network tests
+* Verified connectivity from the client machine using cmd network tests
 
 ### 4. DHCP Configuration
 
 * Installed the **DHCP Server** role
 * Created a DHCP scope for the internal network
 * Configured the Domain Controller’s internal IP as the default gateway for clients
-* Authorized and activated the DHCP scope
-* Verified that `CLIENT1` received an IP address automatically from the DHCP server
-* Checked DHCP leases from the server
+* Activated the DHCP scope
+* Verified that `CLIENT1` received an IP address automatically from the DHCP server scope
+* Checked DHCP leases from the server to see that everything works fine
 
 ### 5. Client Domain Join
 
 * Installed Windows 10 Pro on the client VM
 * Verified that the client received DHCP configuration
-* Verified internet connectivity from the client
 * Verified connectivity to the domain
 * Joined the Windows 10 client to the `rakip.com` domain
 * Confirmed that the client computer object appeared in Active Directory
 
 ### 6. Active Directory User and Group Management
 
-* Created Organizational Units inside Active Directory
-* Created domain users manually
 * Added an administrative user to the **Domain Admins** group
-* Used a PowerShell script and a `.txt` file to bulk-create more than 1,000 users
-* Verified that the users were successfully created in Active Directory Users and Computers
+* Used a PowerShell script to bulk-create more than 1,000 users
+* Created Organizational Units inside Active Directory
 
 ### 7. RBAC-Style File Sharing with Security Groups
 
-* Created global security groups for different access levels and departments
-* Created department folders under a shared `CompanyFiles` directory
+* Created security groups for different access levels and departments
 * Configured Windows file sharing
 * Applied NTFS permissions to folders based on Active Directory security groups
-* Tested access from the Windows 10 domain-joined client
-* Verified that users could only access the folders they were authorized to access
+* Tested access from the Windows 10 domain joined client
+* Verified that users could only access the folders they were authorized to access by the departments they were part of
 * Confirmed that unauthorized access attempts were blocked
 
 ### 8. Group Policy Configuration
 
 * Created Group Policy Objects using Group Policy Management
 * Configured a GPO to block access to **Control Panel** and **Settings** for selected users
-* Configured a centralized wallpaper policy using a network path
+* Configured a centralized wallpaper policy 
 * Configured screen saver settings
 * Enabled password protection for the screen saver
 * Configured automatic screen lock after 5 minutes of inactivity
-* Linked GPOs to the correct OUs/groups
+* Linked GPOs to OUs and groups
 * Verified that the policies applied successfully on the client machine
 
 ### 9. Security Auditing and Event Monitoring
@@ -115,7 +108,7 @@ The internal network was configured so the Windows 10 client could receive an IP
 * Reviewed failed logon activity
 * Reviewed user and account changes
 * Reviewed group membership changes
-* Used Event Viewer filtering to inspect relevant security events
+* Used Event Viewer filtering to inspect security events
 
 ---
 
