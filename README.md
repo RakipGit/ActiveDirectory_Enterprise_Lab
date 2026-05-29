@@ -317,7 +317,6 @@ The monitoring focused on:
 * User management events
 * Group membership changes
 * File/share access activity
-* 
 ---
 
 ## Insights & Lessons Learned
@@ -326,11 +325,11 @@ The monitoring focused on:
 * Configuring the Domain Controller with both internal and external network adapters helped me understand network segmentation and routing in a virtualized lab.
 * Deploying NAT/RRAS demonstrated how internal clients can access the internet through a server acting as a router.
 * Configuring DHCP helped me understand how centralized IP address assignment works in a Windows domain.
-* Joining a Windows 10 client to the domain demonstrated how centralized authentication works through Active Directory.
+* Joining a Windows 10 client to the domain demonstrated how authentication works through Active Directory.
 * Bulk user creation with PowerShell showed how automation can simplify repetitive identity management tasks.
 * Creating security groups and assigning NTFS permissions demonstrated how access can be controlled based on user roles and group membership.
 * Testing folder permissions from the client machine helped confirm the practical impact of access control decisions.
-* Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security-related configurations.
+* Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security configurations.
 * Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor logons, account changes, and group membership changes.
 
 ---
