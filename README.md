@@ -1,2 +1,427 @@
-# ActiveDirectory_Enterprise_Lab
-Active Directory lab with AD DS, DHCP, NAT/RRAS, GPOs, RBAC file shares, and security auditing.
+![Status](https://img.shields.io/badge/status-complete-brightgreen)
+
+# Active Directory Enterprise Lab: AD DS, NAT, DHCP, GPOs, RBAC File Shares and Security Auditing
+
+A hands-on Windows Server lab that demonstrates the deployment and administration of an enterprise-style Active Directory environment using Hyper-V, Windows Server 2019, Windows 10, AD DS, DNS, DHCP, NAT/RRAS, Group Policy, RBAC-style file sharing, and Windows security auditing.
+
+---
+
+## Project Summary
+
+This project simulates a small enterprise Windows domain environment built from scratch in Hyper-V. I configured a Windows Server 2019 machine as a Domain Controller, created an Active Directory domain, deployed DHCP and NAT/RRAS, joined a Windows 10 client to the domain, created users and security groups, configured shared folder permissions, applied Group Policy Objects, and enabled audit/event monitoring.
+
+The goal of this lab was to understand how core Microsoft infrastructure services work together in a centralized domain environment. The project covers both system administration and security administration concepts, including identity management, domain authentication, network segmentation, centralized policy enforcement, access control, and event log monitoring.
+
+---
+
+## Lab Objectives
+
+The main objectives of this project were to:
+
+* Build a functional Active Directory domain environment
+* Configure a Windows Server 2019 Domain Controller
+* Create a private internal network for domain-joined machines
+* Configure DHCP so clients receive IP settings automatically
+* Configure NAT/RRAS so internal clients can access the internet through the Domain Controller
+* Join a Windows 10 client machine to the domain
+* Automate user creation with PowerShell
+* Organize users and groups inside Active Directory
+* Implement RBAC-style access control using security groups and NTFS permissions
+* Configure shared folders for different departments
+* Apply Group Policy Objects to enforce user restrictions and desktop settings
+* Enable security auditing and monitor important Windows events through Event Viewer
+
+---
+
+## Lab Architecture
+
+The lab was built with **two virtual machines** in Hyper-V:
+
+| Machine   | Operating System    | Role                                                                                    |
+| --------- | ------------------- | --------------------------------------------------------------------------------------- |
+| `RAKIPDC` | Windows Server 2019 | Domain Controller, DNS, DHCP, NAT/RRAS, File Server, GPO Management, Audit Policy       |
+| `CLIENT1` | Windows 10 Pro      | Domain-joined workstation used for testing users, GPOs, file access, and authentication |
+
+The Domain Controller was configured with two network adapters:
+
+| Adapter          | Purpose                                                          |
+| ---------------- | ---------------------------------------------------------------- |
+| External Adapter | Provides internet connectivity                                   |
+| Internal Adapter | Provides private domain network connectivity for client machines |
+
+The internal network was configured so the Windows 10 client could receive an IP address from DHCP and reach the internet through NAT/RRAS on the Domain Controller.
+
+---
+
+## What I Did
+
+### 1. Hyper-V and Virtual Machine Setup
+
+* Created the lab environment using **Hyper-V**
+* Downloaded Windows Server 2019 and Windows 10 installation media
+* Created a Windows Server 2019 virtual machine
+* Installed Windows Server 2019 with **Desktop Experience**
+* Created a Windows 10 Pro client virtual machine
+* Connected the Windows 10 client to the internal Hyper-V switch
+
+### 2. Domain Controller Deployment
+
+* Renamed the Windows Server machine to `RAKIPDC`
+* Configured a static IP address on the server
+* Installed the **Active Directory Domain Services** role
+* Promoted the server to a Domain Controller
+* Created a new forest and domain: `rakip.com`
+* Verified that AD DS and DNS were available after installation
+
+### 3. NAT/RRAS and Internal Networking
+
+* Created an internal Hyper-V virtual switch
+* Added a second network adapter to the Domain Controller
+* Configured the internal adapter with a separate private subnet
+* Installed and configured **Routing and Remote Access Service**
+* Enabled NAT so the internal Windows 10 client could access the internet through the Domain Controller
+* Verified connectivity from the client machine using command-line network tests
+
+### 4. DHCP Configuration
+
+* Installed the **DHCP Server** role
+* Created a DHCP scope for the internal network
+* Configured the Domain Controller’s internal IP as the default gateway for clients
+* Authorized and activated the DHCP scope
+* Verified that `CLIENT1` received an IP address automatically from the DHCP server
+* Checked DHCP leases from the server
+
+### 5. Client Domain Join
+
+* Installed Windows 10 Pro on the client VM
+* Verified that the client received DHCP configuration
+* Verified internet connectivity from the client
+* Verified connectivity to the domain
+* Joined the Windows 10 client to the `rakip.com` domain
+* Confirmed that the client computer object appeared in Active Directory
+
+### 6. Active Directory User and Group Management
+
+* Created Organizational Units inside Active Directory
+* Created domain users manually
+* Added an administrative user to the **Domain Admins** group
+* Used a PowerShell script and a `.txt` file to bulk-create more than 1,000 users
+* Verified that the users were successfully created in Active Directory Users and Computers
+
+### 7. RBAC-Style File Sharing with Security Groups
+
+* Created global security groups for different access levels and departments
+* Created department folders under a shared `CompanyFiles` directory
+* Configured Windows file sharing
+* Applied NTFS permissions to folders based on Active Directory security groups
+* Tested access from the Windows 10 domain-joined client
+* Verified that users could only access the folders they were authorized to access
+* Confirmed that unauthorized access attempts were blocked
+
+### 8. Group Policy Configuration
+
+* Created Group Policy Objects using Group Policy Management
+* Configured a GPO to block access to **Control Panel** and **Settings** for selected users
+* Configured a centralized wallpaper policy using a network path
+* Configured screen saver settings
+* Enabled password protection for the screen saver
+* Configured automatic screen lock after 5 minutes of inactivity
+* Linked GPOs to the correct OUs/groups
+* Verified that the policies applied successfully on the client machine
+
+### 9. Security Auditing and Event Monitoring
+
+* Configured audit policies for security monitoring
+* Monitored authentication and account-related events in **Event Viewer**
+* Reviewed failed logon activity
+* Reviewed user and account changes
+* Reviewed group membership changes
+* Used Event Viewer filtering to inspect relevant security events
+
+---
+
+## Screenshots
+
+![Active Directory Lab Overview](images/ad-lab-overview.png)
+
+<details>
+<summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
+
+### 1. Hyper-V VM Creation
+
+![Hyper-V VM Creation](images/hyperv-vm-creation.png)
+
+### 2. Windows Server 2019 Installation
+
+![Windows Server Installation](images/windows-server-installation.png)
+
+### 3. Server Renamed to RAKIPDC
+
+![Rename Server](images/rename-server-rakipdc.png)
+
+### 4. Static IP Configuration
+
+![Static IP Configuration](images/static-ip-domain-controller.png)
+
+### 5. Installing Active Directory Domain Services
+
+![Install AD DS](images/install-ad-ds.png)
+
+### 6. Promoting the Server to Domain Controller
+
+![Promote Domain Controller](images/promote-domain-controller.png)
+
+### 7. Creating the Domain rakip.com
+
+![Create Domain](images/create-domain-rakip.png)
+
+### 8. Active Directory Users and Computers
+
+![ADUC](images/aduc-domain-ready.png)
+
+### 9. Creating Organizational Units and Users
+
+![OU Users](images/create-ou-users.png)
+
+### 10. Adding User to Domain Admins
+
+![Domain Admins](images/domain-admins-user.png)
+
+### 11. Installing Routing and Remote Access
+
+![Install RRAS](images/install-rras.png)
+
+### 12. Internal Hyper-V Switch Creation
+
+![Internal Switch](images/internal-hyperv-switch.png)
+
+### 13. Adding Internal Adapter to the Domain Controller
+
+![Internal Adapter](images/add-internal-adapter.png)
+
+### 14. Configuring NAT/RRAS
+
+![NAT RRAS](images/configure-nat-rras.png)
+
+### 15. DHCP Server Installation
+
+![Install DHCP](images/install-dhcp.png)
+
+### 16. DHCP Scope Configuration
+
+![DHCP Scope](images/dhcp-scope.png)
+
+### 17. Windows 10 Client VM Setup
+
+![Windows 10 Client](images/windows10-client-vm.png)
+
+### 18. Client Receiving DHCP Address
+
+![Client DHCP](images/client-dhcp-ip.png)
+
+### 19. Internet Connectivity Test
+
+![Ping Test](images/client-internet-ping.png)
+
+### 20. Domain Connectivity Test
+
+![Domain Ping](images/client-domain-ping.png)
+
+### 21. Joining CLIENT1 to the Domain
+
+![Join Domain](images/client-join-domain.png)
+
+### 22. DHCP Lease Verification
+
+![DHCP Lease](images/dhcp-client-lease.png)
+
+### 23. Bulk User Creation with PowerShell
+
+![Bulk User Creation](images/bulk-users-powershell.png)
+
+### 24. Created Users in Active Directory
+
+![Created Users](images/ad-created-users.png)
+
+### 25. Security Groups for File Access
+
+![Security Groups](images/security-groups-rbac.png)
+
+### 26. Shared Department Folders
+
+![Department Folders](images/shared-department-folders.png)
+
+### 27. NTFS Permission Configuration
+
+![NTFS Permissions](images/ntfs-folder-permissions.png)
+
+### 28. Testing Authorized Folder Access
+
+![Authorized Folder Access](images/authorized-folder-access.png)
+
+### 29. Testing Access Denied for Unauthorized Folder
+
+![Access Denied](images/access-denied-folder.png)
+
+### 30. GPO: Control Panel and Settings Restriction
+
+![Control Panel GPO](images/control-panel-settings-gpo.png)
+
+### 31. GPO: Centralized Wallpaper
+
+![Wallpaper GPO](images/centralized-wallpaper-gpo.png)
+
+### 32. GPO: Screen Lock Policy
+
+![Screen Lock GPO](images/screen-lock-gpo.png)
+
+### 33. Audit Policy Configuration
+
+![Audit Policy](images/audit-policy-configuration.png)
+
+### 34. Event Viewer Security Logs
+
+![Event Viewer Logs](images/event-viewer-security-logs.png)
+
+</details>
+
+---
+
+## Tools & Technologies
+
+* Hyper-V
+* Windows Server 2019
+* Windows 10 Pro
+* Active Directory Domain Services
+* Active Directory Users and Computers
+* DNS
+* DHCP Server
+* Routing and Remote Access Service
+* NAT
+* Group Policy Management
+* PowerShell
+* NTFS Permissions
+* Windows File Sharing
+* Event Viewer
+* Windows Security Logs
+* Advanced Audit Policy Configuration
+
+---
+
+## Key Security Concepts Demonstrated
+
+* Active Directory domain deployment
+* Centralized identity and access management
+* Domain authentication
+* Domain Controller administration
+* DNS and DHCP integration
+* Internal network segmentation
+* NAT-based internet access for private clients
+* Organizational Unit structure
+* Domain user and group administration
+* Bulk identity provisioning with PowerShell
+* Security groups for access control
+* RBAC-style permission management
+* NTFS permissions
+* Shared folder authorization
+* Least privilege access control
+* Group Policy enforcement
+* User restriction policies
+* Centralized desktop configuration
+* Screen lock policy enforcement
+* Windows audit policy configuration
+* Event log monitoring
+* Failed logon monitoring
+* Account and group membership change monitoring
+
+---
+
+## Security Monitoring Focus
+
+This lab also included a basic security monitoring component using Windows audit policies and Event Viewer.
+
+The monitoring focused on:
+
+* Failed logon attempts
+* Successful logon activity
+* Account changes
+* User management events
+* Group membership changes
+* File/share access activity
+
+This helped demonstrate how Windows administrators can use built-in logging to observe authentication activity and detect important changes inside an Active Directory environment.
+
+---
+
+## Repository Structure
+
+```text
+active-directory-enterprise-lab/
+│
+├── README.md
+│
+├── images/
+│   ├── ad-lab-overview.png
+│   ├── hyperv-vm-creation.png
+│   ├── windows-server-installation.png
+│   ├── rename-server-rakipdc.png
+│   ├── static-ip-domain-controller.png
+│   ├── install-ad-ds.png
+│   ├── promote-domain-controller.png
+│   ├── create-domain-rakip.png
+│   ├── aduc-domain-ready.png
+│   ├── create-ou-users.png
+│   ├── domain-admins-user.png
+│   ├── install-rras.png
+│   ├── internal-hyperv-switch.png
+│   ├── add-internal-adapter.png
+│   ├── configure-nat-rras.png
+│   ├── install-dhcp.png
+│   ├── dhcp-scope.png
+│   ├── windows10-client-vm.png
+│   ├── client-dhcp-ip.png
+│   ├── client-internet-ping.png
+│   ├── client-domain-ping.png
+│   ├── client-join-domain.png
+│   ├── dhcp-client-lease.png
+│   ├── bulk-users-powershell.png
+│   ├── ad-created-users.png
+│   ├── security-groups-rbac.png
+│   ├── shared-department-folders.png
+│   ├── ntfs-folder-permissions.png
+│   ├── authorized-folder-access.png
+│   ├── access-denied-folder.png
+│   ├── control-panel-settings-gpo.png
+│   ├── centralized-wallpaper-gpo.png
+│   ├── screen-lock-gpo.png
+│   ├── audit-policy-configuration.png
+│   └── event-viewer-security-logs.png
+```
+
+---
+
+## Insights & Lessons Learned
+
+* Building the environment from scratch helped me understand how Active Directory, DNS, DHCP, NAT, Group Policy, and Windows auditing work together in a domain network.
+* Configuring the Domain Controller with both internal and external network adapters helped me understand network segmentation and routing in a virtualized lab.
+* Deploying NAT/RRAS demonstrated how internal clients can access the internet through a server acting as a router.
+* Configuring DHCP helped me understand how centralized IP address assignment works in a Windows domain.
+* Joining a Windows 10 client to the domain demonstrated how centralized authentication works through Active Directory.
+* Bulk user creation with PowerShell showed how automation can simplify repetitive identity management tasks.
+* Creating security groups and assigning NTFS permissions demonstrated how access can be controlled based on user roles and group membership.
+* Testing folder permissions from the client machine helped confirm the practical impact of access control decisions.
+* Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security-related configurations.
+* Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor logons, account changes, and group membership changes.
+
+---
+
+## Disclaimer
+
+This project was created in an isolated lab environment for educational and portfolio purposes. The configurations were implemented to practice Windows Server administration, Active Directory management, access control, Group Policy, and security monitoring concepts.
+
+---
+
+## Copyright Notice
+
+All content and visuals in this repository are original and may not be reused without permission.
+
