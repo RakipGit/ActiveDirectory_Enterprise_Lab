@@ -212,15 +212,16 @@ The monitoring is focused on:
 ![Client DHCP](images/CMD2.png)
 ![Client DHCP](images/CMD3.png)
 
- 18. Joining CLIENT1 to the Domain
+ 18. Joining CLIENT1 to the Domain so it can connect with Active Directory and receive domain policies.
 
 ![Join Domain](images/CLIENT-DC.png)
 ![Join Domain](images/CLIENT-DC2.png)
 ![Join Domain](images/CLIENT-DC3.png)
 
-### 22. DHCP Lease Verification
+ 19. Verifying the DHCP lease on `RAKIPDC` and checking Active Directory Users and Computers to confirm that `CLIENT1` appears in the Computers container.
 
-![DHCP Lease](images/dhcp-client-lease.png)
+![DHCP Lease](images/DCHP-VERIFICATION.png)
+![DHCP Lease](images/DC-VERIFICATION.png)
 
 ### 23. Bulk User Creation with PowerShell
 
