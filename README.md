@@ -164,7 +164,7 @@ The monitoring is focused on:
 
  8. Active Directory Users and Computers.
 
-![ADUC](images/aduc-domain-ready.png)
+![ADUC](images/ADUC.png)
 
  9. Creating Organizational Units and Users
 
