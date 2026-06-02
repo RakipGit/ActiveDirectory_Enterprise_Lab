@@ -209,8 +209,8 @@ The monitoring is focused on:
  17. Verifying that `CLIENT1` receives an IP address from the internal LAN DHCP scope and confirming that the `rakip.com` domain is reachable from the client machine.
 
 ![Client DHCP](images/CMD1.png)
-![Client DHCP](images/CMD1.png)
-![Client DHCP](images/CMD1.png)
+![Client DHCP](images/CMD2.png)
+![Client DHCP](images/CMD3.png)
 
  19. Internet Connectivity Test
 
