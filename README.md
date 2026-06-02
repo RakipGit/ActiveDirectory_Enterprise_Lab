@@ -264,9 +264,15 @@ The monitoring is focused on:
 ![Authorized Folder Access](images/TEST2.png)
 ![Authorized Folder Access](images/TEST3.png)
 
-### 27. GPO: Control Panel and Settings Restriction
+### 27. Navigating to Group Policy Management to create my GPOs
 
-![Control Panel GPO](images/control-panel-settings-gpo.png)
+![Group Policy Management](images/GPOs.png)
+
+### 28. GPO: Control Panel and Settings Restriction
+
+![GPO](images/PASS1.png)
+![GPO](images/PASS2.png)
+![GPO](images/PASS3.png)
 
 ### 31. GPO: Centralized Wallpaper
 
