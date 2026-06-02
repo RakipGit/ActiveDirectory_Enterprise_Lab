@@ -154,7 +154,8 @@ The monitoring is focused on:
 
  6. Promoting the Server to Domain Controller
 
-![Promote Domain Controller](images/promote-domain-controller.png)
+![Promote Domain Controller](images/PROMOTEDC.png)
+![Promote Domain Controller](images/PROMOTEDC2.png)
 
  7. Creating the Domain rakip.com
 
