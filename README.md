@@ -241,11 +241,12 @@ The monitoring is focused on:
 ![PowerShell User](images/RME1.png)
 ![PowerShell User](images/RME2.png)
 
- 23. Security Groups for File Access
+ 23. Creating Security Groups for file access control and adding at least one user to each group for permission testing.
 
-![Security Groups](images/security-groups-rbac.png)
+![Security Groups](images/SECGROUPS1.png)
+![Security Groups](images/SECGROUPS2.png)
 
- 26. Shared Department Folders
+ 24. Shared Department Folders
 
 ![Department Folders](images/shared-department-folders.png)
 
