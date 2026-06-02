@@ -132,7 +132,7 @@ The monitoring is focused on:
 ![Windows Server Installation](images/WindowsServer2019.png)
 ![Windows 10 Installation](images/Windows10.png)
 
- 2. Hyper-V VM Domain Controller Creation
+ 2. Hyper-V VM Domain Controller Creation.
 
 ![VM Creation](images/DC.png)
 ![VM Creation](images/DC2.png)
@@ -147,21 +147,21 @@ The monitoring is focused on:
 ![Static IP Configuration](images/StaticIP-EthernetWAN.png)
 ![Static IP Configuration](images/StaticIP-EthernetWAN(2).png)
 
- 5. Installing Active Directory Domain Services
+ 5. Installing Active Directory Domain Services.
 
 ![Install AD DS](images/AD1.png)
 ![Install AD DS](images/AD2.png)
 
- 6. Promoting the Server to Domain Controller
+ 6. Promoting the Server to Domain Controller.
 
 ![Promote Domain Controller](images/PROMOTEDC.png)
 ![Promote Domain Controller](images/PROMOTEDC2.png)
 
- 7. Creating the Domain rakip.com
+ 7.The Domain rakip.com is ready to use.
 
-![Create Domain](images/create-domain-rakip.png)
+![Create Domain](images/DC-READY.png)
 
- 8. Active Directory Users and Computers
+ 8. Active Directory Users and Computers.
 
 ![ADUC](images/aduc-domain-ready.png)
 
