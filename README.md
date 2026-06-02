@@ -212,17 +212,11 @@ The monitoring is focused on:
 ![Client DHCP](images/CMD2.png)
 ![Client DHCP](images/CMD3.png)
 
- 19. Internet Connectivity Test
+ 18. Joining CLIENT1 to the Domain
 
-![Ping Test](images/client-internet-ping.png)
-
- 20. Domain Connectivity Test
-
-![Domain Ping](images/client-domain-ping.png)
-
- 21. Joining CLIENT1 to the Domain
-
-![Join Domain](images/client-join-domain.png)
+![Join Domain](images/CLIENT-DC.png)
+![Join Domain](images/CLIENT-DC2.png)
+![Join Domain](images/CLIENT-DC3.png)
 
 ### 22. DHCP Lease Verification
 
