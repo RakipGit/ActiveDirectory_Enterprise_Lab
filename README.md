@@ -127,13 +127,14 @@ The monitoring is focused on:
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
- 1. Hyper-V VM Creation
+ 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+
+![Windows Server Installation](images/WindowsServer2019.png)
+![Windows 10 Installation](images/Windows10.png)
+
+ 3. Hyper-V VM Creation
 
 ![Hyper-V VM Creation](images/hyperv-vm-creation.png)
-
- 2. Windows Server 2019 Installation
-
-![Windows Server Installation](images/windows-server-installation.png)
 
  3. Server Renamed to RAKIPDC
 
