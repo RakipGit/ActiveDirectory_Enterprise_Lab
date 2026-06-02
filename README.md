@@ -201,14 +201,16 @@ The monitoring is focused on:
 ![DHCP Scope](images/DHCP4.png)
 ![DHCP Scope](images/DHCP5.png)
 
- 17. Windows 10 Client VM Setup
+ 16. Windows 10 Client VM Setup. I connected this VM with the internal adpater we created for the private network.
 
 ![Windows 10 Client](images/CLIENT1.png)
 ![Windows 10 Client](images/CLIENT1(2).png)
 
- 18. Client Receiving DHCP Address
+ 17. Verifying that `CLIENT1` receives an IP address from the internal LAN DHCP scope and confirming that the `rakip.com` domain is reachable from the client machine.
 
-![Client DHCP](images/client-dhcp-ip.png)
+![Client DHCP](images/CMD1.png)
+![Client DHCP](images/CMD1.png)
+![Client DHCP](images/CMD1.png)
 
  19. Internet Connectivity Test
 
