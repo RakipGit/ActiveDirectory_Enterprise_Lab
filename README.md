@@ -173,7 +173,7 @@ The monitoring is focused on:
 
  10. Installing the Routing and Remote Access role on `RAKIPDC` to configure NAT/RRAS for internet access from the internal client network later on.
 
-![Install RRAS](images/RAS1.png.png)
+![Install RRAS](images/RAS1.png)
 
  12. Internal Hyper-V Switch Creation
 
