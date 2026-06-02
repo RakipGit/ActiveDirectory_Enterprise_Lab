@@ -236,11 +236,16 @@ The monitoring is focused on:
 ![Created Users](images/BULK6.png)
 ![Created Users](images/BULK7.png)
 
-### 25. Security Groups for File Access
+ 22. Connecting to `CLIENT1` as one of the users I created with the script above. Notepad name `Rakip me` gets automatically created as user `rme`.
+
+![PowerShell User](images/RME1.png)
+![PowerShell User](images/RME2.png)
+
+ 23. Security Groups for File Access
 
 ![Security Groups](images/security-groups-rbac.png)
 
-### 26. Shared Department Folders
+ 26. Shared Department Folders
 
 ![Department Folders](images/shared-department-folders.png)
 
