@@ -122,7 +122,7 @@ The monitoring is focused on:
 
 ## Screenshots
 
-![Active Directory Lab Overview](images/Screenshot (73).png)
+![Active Directory Lab Architecture](images/AD-ARCHITECTURE.png)
 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
