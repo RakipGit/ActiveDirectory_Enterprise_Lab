@@ -313,20 +313,6 @@ The monitoring is focused on:
 
 ---
 
-## Security Monitoring Focus
-
-This lab also included a basic security monitoring component using Windows audit policies and Event Viewer.
-
-The monitoring focused on:
-
-* Failed logon attempts
-* Successful logon activity
-* Account changes
-* User management events
-* Group membership changes
-* File/share access activity
----
-
 ## Insights & Lessons Learned
 
 * Building the environment from scratch helped me understand how Active Directory, DNS, DHCP, NAT, Group Policy, and Windows auditing work together in a domain network.
