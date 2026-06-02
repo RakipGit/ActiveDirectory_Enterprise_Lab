@@ -251,9 +251,12 @@ The monitoring is focused on:
 ![Department Folders](images/SHARED1.png)
 ![Shared File](images/SHARED2.png)
 
-### 27. NTFS Permission Configuration
+### 25. NTFS Permission Configuration
 
-![NTFS Permissions](images/ntfs-folder-permissions.png)
+![NTFS Permissions](images/NTFS1.png)
+![NTFS Permissions](images/NTFS2.png)
+![NTFS Permissions](images/NTFS3.png)
+![NTFS Permissions](images/NTFS4.png)
 
 ### 28. Testing Authorized Folder Access
 
