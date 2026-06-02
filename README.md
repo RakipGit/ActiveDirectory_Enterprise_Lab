@@ -223,13 +223,18 @@ The monitoring is focused on:
 ![DHCP Lease](images/DCHP-VERIFICATION.png)
 ![DHCP Lease](images/DC-VERIFICATION.png)
 
-### 23. Bulk User Creation with PowerShell
+ 20 . Bulk User Creation with PowerShell. Opening PShell as an admin and running the script.
 
-![Bulk User Creation](images/bulk-users-powershell.png)
+![Bulk User Creation](images/BULK1.png)
+![Bulk User Creation](images/BULK2.png)
+![Bulk User Creation](images/BULK3.png)
+![Bulk User Creation](images/BULK4.png)
 
-### 24. Created Users in Active Directory
+ 21. Created Users in Active Directory
 
-![Created Users](images/ad-created-users.png)
+![Created Users](images/BULK5.png)
+![Created Users](images/BULK6.png)
+![Created Users](images/BULK7.png)
 
 ### 25. Security Groups for File Access
 
