@@ -185,18 +185,21 @@ The monitoring is focused on:
 ![Internal Adapter](images/INTERNAL-SW3.png)
 ![Internal Adapter](images/SWLAN-STATICIP.png)
 
- 13. Configuring NAT/RRAS
+ 13. Configuring NAT/RRAS and selecting the Ethernet WAN adapter as the public interface for the `RAKIPDC` so it can route internal client traffic to the internet.
 
 ![NAT RRAS](images/NAT1.png)
 ![NAT RRAS](images/NAT2.png)
 
- 15. DHCP Server Installation
+ 14. DHCP Server Installation
 
-![Install DHCP](images/install-dhcp.png)
+![Install DHCP](images/DHCP1.png)
 
- 16. DHCP Scope Configuration
+ 16. Configuring the DHCP scope `10.0.0.100–10.0.0.200` based on the internal adapter subnet so `CLIENT1` can automatically receive a valid IP address inside the private domain network.
 
-![DHCP Scope](images/dhcp-scope.png)
+![DHCP Scope](images/DHCP2.png)
+![DHCP Scope](images/DHCP3.png)
+![DHCP Scope](images/DHCP4.png)
+![DHCP Scope](images/DHCP5.png)
 
  17. Windows 10 Client VM Setup
 
