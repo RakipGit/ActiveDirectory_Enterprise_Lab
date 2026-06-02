@@ -194,7 +194,7 @@ The monitoring is focused on:
 
 ![Install DHCP](images/DHCP1.png)
 
- 16. Configuring the DHCP scope `10.0.0.100–10.0.0.200` based on the internal adapter subnet so `CLIENT1` can automatically receive a valid IP address inside the private domain network.
+ 15. Configuring the DHCP scope `10.0.0.100–10.0.0.200` based on the internal adapter subnet so `CLIENT1` can automatically receive a valid IP address inside the private domain network.
 
 ![DHCP Scope](images/DHCP2.png)
 ![DHCP Scope](images/DHCP3.png)
@@ -203,7 +203,8 @@ The monitoring is focused on:
 
  17. Windows 10 Client VM Setup
 
-![Windows 10 Client](images/windows10-client-vm.png)
+![Windows 10 Client](images/CLIENT1.png)
+![Windows 10 Client](images/CLIENT1(2).png)
 
  18. Client Receiving DHCP Address
 
