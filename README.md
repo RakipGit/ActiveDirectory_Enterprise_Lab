@@ -149,7 +149,8 @@ The monitoring is focused on:
 
  5. Installing Active Directory Domain Services
 
-![Install AD DS](images/install-ad-ds.png)
+![Install AD DS](images/AD1.png)
+![Install AD DS](images/AD2.png)
 
  6. Promoting the Server to Domain Controller
 
