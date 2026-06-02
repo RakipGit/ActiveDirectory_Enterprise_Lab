@@ -138,9 +138,9 @@ The monitoring is focused on:
 ![VM Creation](images/DC2.png)
 ![VM Creation](images/DC3.png)
 
- 3. Server Renamed to RAKIPDC
+ 3. Renaming the Server before promoting it to a Domain Controller.
 
-![Rename Server](images/rename-server-rakipdc.png)
+![Rename Server](images/Rename1.png.png)
 
  4. Static IP Configuration
 
