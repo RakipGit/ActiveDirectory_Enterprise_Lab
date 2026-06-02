@@ -246,7 +246,7 @@ The monitoring is focused on:
 ![Security Groups](images/SECGROUPS1.png)
 ![Security Groups](images/SECGROUPS2.png)
 
- 24. Shared Department Folders
+ 24. Creating department folders inside `CompanyFiles` and sharing the main folder so domain users can access the permitted folders over the network.
 
 ![Department Folders](images/SHARED1.png)
 ![Shared File](images/SHARED2.png)
