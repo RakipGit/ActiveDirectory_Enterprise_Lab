@@ -132,7 +132,7 @@ The monitoring is focused on:
 ![Windows Server Installation](images/WindowsServer2019.png)
 ![Windows 10 Installation](images/Windows10.png)
 
- 3. Hyper-V VM Domain Controller Creation
+ 2. Hyper-V VM Domain Controller Creation
 
 ![VM Creation](images/DC.png)
 ![VM Creation](images/DC2.png)
@@ -140,7 +140,7 @@ The monitoring is focused on:
 
  3. Renaming the Server before promoting it to a Domain Controller.
 
-![Rename Server](images/Rename1.png.png)
+![Rename Server](images/Rename1.png)
 
  4. Static IP Configuration
 
