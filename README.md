@@ -132,9 +132,11 @@ The monitoring is focused on:
 ![Windows Server Installation](images/WindowsServer2019.png)
 ![Windows 10 Installation](images/Windows10.png)
 
- 3. Hyper-V VM Creation
+ 3. Hyper-V VM Domain Controller Creation
 
-![Hyper-V VM Creation](images/hyperv-vm-creation.png)
+![VM Creation](images/DC.png)
+![VM Creation](images/DC2.png)
+![VM Creation](images/DC3.png)
 
  3. Server Renamed to RAKIPDC
 
