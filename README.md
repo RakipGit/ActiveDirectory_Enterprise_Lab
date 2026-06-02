@@ -175,9 +175,10 @@ The monitoring is focused on:
 
 ![Install RRAS](images/RAS1.png)
 
- 12. Internal Hyper-V Switch Creation
+ 11. Creating an internal Hyper-V virtual switch to isolate the client network and connect `CLIENT1` VM to the private domain network.
 
-![Internal Switch](images/internal-hyperv-switch.png)
+![Internal Switch](images/INTERNAL-SW.png)
+![Internal Switch](images/INTERNAL-SW2.png)
 
  13. Adding Internal Adapter to the Domain Controller
 
