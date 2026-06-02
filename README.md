@@ -171,13 +171,9 @@ The monitoring is focused on:
 ![OU Users](images/OU.png)
 ![OU Users](images/LOGIN.png)
 
- 11. Adding User to Domain Admins
+ 10. Installing the Routing and Remote Access role on `RAKIPDC` to configure NAT/RRAS for internet access from the internal client network later on.
 
-![Domain Admins](images/domain-admins-user.png)
-
- 11. Installing Routing and Remote Access
-
-![Install RRAS](images/install-rras.png)
+![Install RRAS](images/RAS1.png.png)
 
  12. Internal Hyper-V Switch Creation
 
