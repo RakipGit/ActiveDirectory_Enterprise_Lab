@@ -156,6 +156,7 @@ The monitoring is focused on:
 
 ![Promote Domain Controller](images/PROMOTEDC.png)
 ![Promote Domain Controller](images/PROMOTEDC2.png)
+![Promote Domain Controller](images/PROMOTEDC3.png)
 
  7.The Domain rakip.com is ready to use.
 
