@@ -258,15 +258,13 @@ The monitoring is focused on:
 ![NTFS Permissions](images/NTFS3.png)
 ![NTFS Permissions](images/NTFS4.png)
 
-### 28. Testing Authorized Folder Access
+### 26. Testing folder permissions from `CLIENT1` by logging in as a domain user and confirming that only the authorized shared folder is accessible.
 
-![Authorized Folder Access](images/authorized-folder-access.png)
+![Authorized Folder Access](images/TEST1.png)
+![Authorized Folder Access](images/TEST2.png)
+![Authorized Folder Access](images/TEST3.png)
 
-### 29. Testing Access Denied for Unauthorized Folder
-
-![Access Denied](images/access-denied-folder.png)
-
-### 30. GPO: Control Panel and Settings Restriction
+### 27. GPO: Control Panel and Settings Restriction
 
 ![Control Panel GPO](images/control-panel-settings-gpo.png)
 
