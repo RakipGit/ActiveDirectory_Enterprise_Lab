@@ -248,7 +248,8 @@ The monitoring is focused on:
 
  24. Shared Department Folders
 
-![Department Folders](images/shared-department-folders.png)
+![Department Folders](images/SHARED1.png)
+![Shared File](images/SHARED2.png)
 
 ### 27. NTFS Permission Configuration
 
