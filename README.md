@@ -110,6 +110,14 @@ The internal network was configured so the Windows 10 client could receive an IP
 * Reviewed group membership changes
 * Used Event Viewer filtering to inspect security events
 
+The monitoring is focused on:
+
+* Failed logon attempts
+* Successful logon activity
+* Account changes
+* User management events
+* Group membership changes
+* File/share access activity
 ---
 
 ## Screenshots
