@@ -185,10 +185,10 @@ The monitoring is focused on:
 ![Internal Adapter](images/INTERNAL-SW3.png)
 ![Internal Adapter](images/SWLAN-STATICIP.png)
 
+ 13. Configuring NAT/RRAS
 
- 14. Configuring NAT/RRAS
-
-![NAT RRAS](images/configure-nat-rras.png)
+![NAT RRAS](images/NAT1.png)
+![NAT RRAS](images/NAT2.png)
 
  15. DHCP Server Installation
 
