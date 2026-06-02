@@ -180,9 +180,11 @@ The monitoring is focused on:
 ![Internal Switch](images/INTERNAL-SW.png)
 ![Internal Switch](images/INTERNAL-SW2.png)
 
- 13. Adding Internal Adapter to the Domain Controller
+ 12. Adding an internal adapter to `RAKIPDC` and giving it a static IP for the private network.
 
-![Internal Adapter](images/add-internal-adapter.png)
+![Internal Adapter](images/INTERNAL-SW3.png)
+![Internal Adapter](images/SWLAN-STATICIP.png)
+
 
  14. Configuring NAT/RRAS
 
