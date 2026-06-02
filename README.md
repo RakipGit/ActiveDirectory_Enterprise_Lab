@@ -268,10 +268,13 @@ The monitoring is focused on:
 
 ![Group Policy Management](images/GPOs.png)
 
-### 28. GPO: Control Panel and Settings Restriction
+### 28. GPO: Password restrictions
 
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
+
+### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account
+
 ![GPO](images/PASS3.png)
 
 ### 31. GPO: Centralized Wallpaper
