@@ -166,11 +166,12 @@ The monitoring is focused on:
 
 ![ADUC](images/ADUC.png)
 
- 9. Creating Organizational Units and Users
+ 9. Creating an Organizational Unit, adding a domain user with administrative privileges, and logging in with that user to verify the account.
 
-![OU Users](images/create-ou-users.png)
+![OU Users](images/OU.png)
+![OU Users](images/LOGIN.png)
 
- 10. Adding User to Domain Admins
+ 11. Adding User to Domain Admins
 
 ![Domain Admins](images/domain-admins-user.png)
 
