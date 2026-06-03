@@ -36,88 +36,84 @@ The internal network was configured so the Windows 10 client could receive an IP
 
 ### 1. Hyper-V and Virtual Machine Setup
 
-* Created the lab environment using Hyper-V
-* Downloaded Windows Server 2019 and Windows 10 ISOs
-* Created a Windows Server 2019 virtual machine
-* Installed Windows Server 2019 with Desktop Experience
-* Created a Windows 10 Pro client virtual machine
-* Connected the Windows 10 client to the internal Hyper-V switch
+* Created the lab environment using Hyper-V.
+* Downloaded Windows Server 2019 and Windows 10 ISOs.
+* Created a Windows Server 2019 virtual machine.
+* Created a Windows 10 Pro client virtual machine.
+* Connected the Windows 10 client to the internal Hyper-V switch.
 
 ### 2. Domain Controller Deployment
 
-* Renamed the Windows Server machine to `RAKIPDC`
-* Configured a static IP address on the server
-* Installed the Active Directory Domain Services role
-* Promoted the server to a Domain Controller
+* Renamed the Windows Server machine to `RAKIPDC`.
+* Configured a static IP address on the server.
+* Installed the Active Directory Domain Services role.
+* Promoted the server to a Domain Controller.
 
 ### 3. NAT/RRAS and Internal Networking
 
-* Added a second internal Hyper-V virtual switch network adapter to the Domain Controller
-* Configured the internal adapter with a separate private subnet
-* Installed and configured Routing and Remote Access Service
-* Enabled NAT so the internal Windows 10 client could access the internet through the Domain Controller
-* Verified connectivity from the client machine using cmd network tests
+* Added a second internal Hyper-V virtual switch network adapter to the Domain Controller.
+* Configured the internal adapter with a separate private subnet.
+* Installed and configured Routing and Remote Access Service.
+* Enabled NAT so the internal Windows 10 client could access the internet through the Domain Controller.
+* Verified connectivity from the client machine using cmd network tests.
 
 ### 4. DHCP Configuration
 
 * Installed the DHCP Server role
-* Created a DHCP scope for the internal network
-* Configured the Domain Controller’s internal IP as the default gateway for clients
-* Activated the DHCP scope
-* Verified that `CLIENT1` received an IP address automatically from the DHCP server scope
-* Checked DHCP leases from the server to see that everything works fine
+* Created a DHCP scope for the internal network based on the Internal LAN Iadapter subnet.
+* Configured the Domain Controller’s internal IP as the default gateway for clients.
+* Verified that `CLIENT1` received an IP address automatically from the DHCP server scope.
+* Checked DHCP leases from the server to see that everything works fine.
 
 ### 5. Client Domain Join
 
 * Installed Windows 10 Pro on the client VM
-* Verified that the client received DHCP configuration
-* Verified connectivity to the domain
-* Joined the Windows 10 client to the `rakip.com` domain
-* Confirmed that the client computer object appeared in Active Directory
+* Joined the Windows 10 client to the `rakip.com` domain and verified connectivity to it by confirming that the client computer object appeared in Active Directory.
+* Verified that the client received DHCP configuration.
 
 ### 6. Active Directory User and Group Management
 
 * Added an administrative user to the Domain Admins group
 * Used a PowerShell script to bulk-create more than 1,000 users
-* Created Organizational Units inside Active Directory
+* Created Organizational Units (OUs) inside Active Directory
 
 ### 7. RBAC-Style File Sharing with Security Groups
 
-* Created security groups for different access levels and departments
-* Configured Windows file sharing
-* Applied NTFS permissions to folders based on Active Directory security groups
-* Tested access from the Windows 10 domain joined client
-* Verified that users could only access the folders they were authorized to access by the departments they were part of
-* Confirmed that unauthorized access attempts were blocked
+* Created security groups for different access levels and departments.
+* Configured Windows file sharing.
+* Applied NTFS permissions to folders based on Active Directory security groups.
+* Tested access from the Windows 10 domain joined client.
+* Verified that users could only access the folders they were authorized to access by the departments they were part of.
+* Confirmed that unauthorized access attempts were blocked.
 
 ### 8. Group Policy Configuration
 
-* Created Group Policy Objects using Group Policy Management
-* Configured a GPO to block access to Control Panel and Settings for selected users
-* Configured a centralized wallpaper policy 
-* Configured screen saver settings
-* Enabled password protection for the screen saver
-* Configured automatic screen lock after 5 minutes of inactivity
-* Linked GPOs to OUs and groups
-* Verified that the policies applied successfully on the client machine
+* Created Group Policy Objects using Group Policy Management.
+* Configured a GPO to block access to Control Panel and Settings for selected users.
+* Configured a centralized wallpaper policy using a shared UNC network path.
+* Configured screen saver settings Enabled password protection.
+* Configured automatic screen lock after 5 minutes of inactivity.
+* Configured a logon banner/message GPO to display a warning message before the user sign in.
+* Linked GPOs to OUs and groups.
+* Verified that the policies applied successfully on the client machine.
 
 ### 9. Security Auditing and Event Monitoring
 
-* Configured audit policies for security monitoring
-* Monitored authentication and account-related events in Event Viewer
-* Reviewed failed logon activity
-* Reviewed user and account changes
-* Reviewed group membership changes
-* Used Event Viewer filtering to inspect security events
+* Configured audit policies for security monitoring.
+* Monitored authentication and account related events in Event Viewer.
+* Used the Event Viewer filtering to inspect security events.
+* Reviewed failed logon activity.
+* Reviewed user and account changes.
+* Reviewed group membership changes.
 
 The monitoring is focused on:
 
-* Failed logon attempts
-* Successful logon activity
-* Account changes
-* User management events
-* Group membership changes
-* File/share access activity
+* Failed logon attempts.
+* Successful logon activity.
+* Account changes.
+* User management events.
+* Group membership changes.
+* File/share access activity.
 ---
 
 ## Screenshots
