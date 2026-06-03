@@ -268,12 +268,12 @@ The monitoring is focused on:
 
 ![Group Policy Management](images/GPOs.png)
 
-### 28. GPO: Password restrictions
+### 28. GPO: Password & Account restrictions
 
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
 
-### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the password (length etc.)
+### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the user password (length etc.)
 
 ![GPO](images/PASS3.png)
 ![GPO](images/PASS4.png)
