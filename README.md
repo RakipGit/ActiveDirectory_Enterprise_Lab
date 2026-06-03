@@ -247,7 +247,7 @@ The monitoring is focused on:
 ![Department Folders](images/SHARED1.png)
 ![Shared File](images/SHARED2.png)
 
-### 25. New Technology File System (NTFS) Permission Configuration
+### 25. New Technology File System (NTFS) Permission Configuration.
 
 ![NTFS Permissions](images/NTFS1.png)
 ![NTFS Permissions](images/NTFS2.png)
@@ -269,7 +269,7 @@ The monitoring is focused on:
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
 
-### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the user password (length etc.)
+### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the user password (length etc.).
 
 ![GPO](images/PASS3.png)
 ![GPO](images/PASS5.png)
