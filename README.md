@@ -208,7 +208,7 @@ The monitoring is focused on:
 ![Client DHCP](images/CMD2.png)
 ![Client DHCP](images/CMD3.png)
 
-### 18. Joining CLIENT1 to the Domain so it can connect with Active Directory and receive domain policies.
+### 18. Joining CLIENT1 to the Domain so it can connect with Active Directory.
 
 ![Join Domain](images/CLIENT-DC.png)
 ![Join Domain](images/CLIENT-DC2.png)
@@ -219,7 +219,7 @@ The monitoring is focused on:
 ![DHCP Lease](images/DCHP-VERIFICATION.png)
 ![DHCP Lease](images/DC-VERIFICATION.png)
 
-### 20 . Bulk User Creation with PowerShell. Opening PShell as an admin and running the script.
+### 20 . Automated user creation with PowerShell. Opening PShell as an admin and running the script.
 
 ![Bulk User Creation](images/BULK1.png)
 ![Bulk User Creation](images/BULK2.png)
@@ -247,7 +247,7 @@ The monitoring is focused on:
 ![Department Folders](images/SHARED1.png)
 ![Shared File](images/SHARED2.png)
 
-### 25. NTFS Permission Configuration
+### 25. New Technology File System (NTFS) Permission Configuration
 
 ![NTFS Permissions](images/NTFS1.png)
 ![NTFS Permissions](images/NTFS2.png)
@@ -264,7 +264,7 @@ The monitoring is focused on:
 
 ![Group Policy Management](images/GPOs.png)
 
-### 28. GPO: Screen Lock Policy.Password & Account restrictions.
+### 28. GPO: Screen Lock Policy. Password & Account restrictions.
 
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
@@ -272,6 +272,7 @@ The monitoring is focused on:
 ### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the user password (length etc.)
 
 ![GPO](images/PASS3.png)
+![GPO](images/PASS5.png)
 ![GPO](images/PASS4.png)
 
 ### 30. GPO: Control Panel and Settings Restriction. Also testing GPO.
@@ -281,7 +282,7 @@ The monitoring is focused on:
 ![Control Panel and Settings GPO](images/SET3.png)
 ![Control Panel and Settings GPO](images/SET4.png)
 
-### 31. GPO: Centralized Wallpaper.Configuring a centralized wallpaper GPO using the shared network path `\\RAKIPDC\Shares\Wallpaper` so selected domain users receive the same desktop background.
+### 31. GPO: Centralized Wallpaper. Configuring a centralized wallpaper GPO using the shared network path `\\RAKIPDC\Shares\Wallpaper` so selected domain users receive the same desktop background.
 
 ![Wallpaper GPO](images/WALL1.png)
 ![Wallpaper GPO](images/WALL2.png)
@@ -312,9 +313,9 @@ The monitoring is focused on:
 * Windows Server 2019 & Windows 10 Pro
 * Active Directory Domain Services & Active Directory Users and Computers
 * DNS
-* DHCP Server
-* Routing and Remote Access Service 
-* NAT
+* DHCP 
+* Routing and Remote Access Service (RRAS)
+* Network Address Translation (NAT)
 * Group Policy Management
 * PowerShell
 * NTFS Permissions
@@ -326,44 +327,43 @@ The monitoring is focused on:
 
 ## Security Concepts Demonstrated
 
-* Active Directory domain deployment
-* Centralized identity and access management
-* Domain authentication
-* Domain Controller administration
-* DNS and DHCP integration
-* Internal network segmentation
-* NAT-based internet access for private clients
-* Organizational Unit structure
-* Domain user and group administration
-* Bulk identity provisioning with PowerShell
-* Security groups for access control
-* RBAC permission management
-* NTFS permissions
-* Shared folder authorization
-* Least privilege access control
-* Group Policy enforcement
-* User restriction policies
-* Centralized desktop configuration
-* Screen lock policy enforcement
-* Windows audit policy configuration
-* Event log monitoring
-* Failed logon monitoring
-* Account and group membership change monitoring
+* Active Directory domain deployment.
+* Centralized identity and access management.
+* Domain authentication.
+* Domain Controller administration.
+* DNS and DHCP integration.
+* Internal network segmentation.
+* NAT based internet access for private clients.
+* Organizational Units structure.
+* Domain user and group administration.
+* Bulk identity provisioning with PowerShell.
+* Security groups for access control.
+* RBAC permission management.
+* NTFS permissions.
+* Shared folder authorization utilizing least privilege access control.
+* Group Policy enforcement.
+* User restriction policies.
+* Centralized desktop configuration.
+* Screen lock policy enforcement.
+* Windows audit policy configuration.
+* Event log monitoring.
+* Failed logon monitoring.
+* Account and group membership change monitoring.
 
 ---
 
 ## Insights & Lessons Learned
 
-* Building the environment from scratch helped me understand how Active Directory, DNS, DHCP, NAT, Group Policy, and Windows auditing work together in a domain network.
-* Configuring the Domain Controller with both internal and external network adapters helped me understand network segmentation and routing in a virtualized lab.
+* Building the environment from scratch helped me understand how Active Directory, DNS, DHCP, NAT, Group Policies, and Windows auditing work together in a network.
+* Configuring the Domain Controller with both internal and external network adapters helped me understand network segmentation and routing.
 * Deploying NAT/RRAS demonstrated how internal clients can access the internet through a server acting as a router.
 * Configuring DHCP helped me understand how centralized IP address assignment works in a Windows domain.
 * Joining a Windows 10 client to the domain demonstrated how authentication works through Active Directory.
-* Bulk user creation with PowerShell showed how automation can simplify repetitive identity management tasks.
+* The Bulk user creation with PowerShell showed how automation can simplify repetitive identity management tasks.
 * Creating security groups and assigning NTFS permissions demonstrated how access can be controlled based on user roles and group membership.
 * Testing folder permissions from the client machine helped confirm the practical impact of access control decisions.
 * Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security configurations.
-* Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor logons, account changes, and group membership changes.
+* Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor important system activities.
 
 ---
 
