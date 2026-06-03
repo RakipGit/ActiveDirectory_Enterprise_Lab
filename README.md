@@ -273,9 +273,10 @@ The monitoring is focused on:
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
 
-### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account
+### 29. Testing the password GPO and finding out it works because after 3 failed log in attempts it locks the account. Also there are policy restrictions when you want to change the password (length etc.)
 
 ![GPO](images/PASS3.png)
+![GPO](images/PASS4.png)
 
 ### 31. GPO: Centralized Wallpaper
 
