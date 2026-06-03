@@ -304,7 +304,7 @@ The monitoring is focused on:
 ![Audit GPO](images/SEC2.png)
 ![Audit GPO](images/SEC3.png)
 ![Audit GPO](images/SEC4.png)
-![Event Viewer Logs](images/EVENT-VIEWER.png)
+![Event Viewer Logs](images/EVENT-VIEWER-RESULTS.png)
 
 </details>
 
