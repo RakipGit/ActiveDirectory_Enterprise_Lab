@@ -127,126 +127,126 @@ The monitoring is focused on:
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
 
- 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
+### 1. Installing Windows Server 2019 for the Domain Controller and Windows 10  for the client VM.
 
 ![Windows Server Installation](images/WindowsServer2019.png)
 ![Windows 10 Installation](images/Windows10.png)
 
- 2. Hyper-V VM Domain Controller Creation.
+### 2. Hyper-V VM Domain Controller Creation.
 
 ![VM Creation](images/DC.png)
 ![VM Creation](images/DC2.png)
 ![VM Creation](images/DC3.png)
 
- 3. Renaming the Server before promoting it to a Domain Controller.
+### 3. Renaming the Server before promoting it to a Domain Controller.
 
 ![Rename Server](images/Rename1.png)
 
- 4. Configuring a static IP address on the Ethernet WAN adapter of `RAKIPDC` to support AD DS, DNS, DHCP, and NAT/RRAS services.
+### 4. Configuring a static IP address on the Ethernet WAN adapter of `RAKIPDC` to support AD DS, DNS, DHCP, and NAT/RRAS services.
 
 ![Static IP Configuration](images/StaticIP-EthernetWAN.png)
 ![Static IP Configuration](images/StaticIP-EthernetWAN(2).png)
 
- 5. Installing Active Directory Domain Services.
+### 5. Installing Active Directory Domain Services.
 
 ![Install AD DS](images/AD1.png)
 ![Install AD DS](images/AD2.png)
 
- 6. Promoting the Server to Domain Controller.
+### 6. Promoting the Server to Domain Controller.
 
 ![Promote Domain Controller](images/PROMOTEDC.png)
 ![Promote Domain Controller](images/PROMOTEDC2.png)
 ![Promote Domain Controller](images/PROMOTEDC3.png)
 
- 7.The Domain rakip.com is ready to use.
+### 7.The Domain rakip.com is ready to use.
 
 ![Create Domain](images/DC-READY.png)
 
- 8. Active Directory Users and Computers.
+### 8. Active Directory Users and Computers.
 
 ![ADUC](images/ADUC.png)
 
- 9. Creating an Organizational Unit, adding a domain user with administrative privileges, and logging in with that user to verify the account.
+### 9. Creating an Organizational Unit, adding a domain user with administrative privileges, and logging in with that user to verify the account.
 
 ![OU Users](images/OU.png)
 ![OU Users](images/LOGIN.png)
 
- 10. Installing the Routing and Remote Access role on `RAKIPDC` to configure NAT/RRAS for internet access from the internal client network later on.
+### 10. Installing the Routing and Remote Access role on `RAKIPDC` to configure NAT/RRAS for internet access from the internal client network later on.
 
 ![Install RRAS](images/RAS1.png)
 
- 11. Creating an internal Hyper-V virtual switch to isolate the client network and connect `CLIENT1` VM to the private domain network.
+### 11. Creating an internal Hyper-V virtual switch to isolate the client network and connect `CLIENT1` VM to the private domain network.
 
 ![Internal Switch](images/INTERNAL-SW.png)
 ![Internal Switch](images/INTERNAL-SW2.png)
 
- 12. Adding an internal adapter to `RAKIPDC` and giving it a static IP for the private network.
+### 12. Adding an internal adapter to `RAKIPDC` and giving it a static IP for the private network.
 
 ![Internal Adapter](images/INTERNAL-SW3.png)
 ![Internal Adapter](images/SWLAN-STATICIP.png)
 
- 13. Configuring NAT/RRAS and selecting the Ethernet WAN adapter as the public interface for the `RAKIPDC` so it can route internal client traffic to the internet.
+### 13. Configuring NAT/RRAS and selecting the Ethernet WAN adapter as the public interface for the `RAKIPDC` so it can route internal client traffic to the internet.
 
 ![NAT RRAS](images/NAT1.png)
 ![NAT RRAS](images/NAT2.png)
 
- 14. DHCP Server Installation
+### 14. DHCP Server Installation
 
 ![Install DHCP](images/DHCP1.png)
 
- 15. Configuring the DHCP scope `10.0.0.100–10.0.0.200` based on the internal adapter subnet so `CLIENT1` can automatically receive a valid IP address inside the private domain network.
+### 15. Configuring the DHCP scope `10.0.0.100–10.0.0.200` based on the internal adapter subnet so `CLIENT1` can automatically receive a valid IP address inside the private domain network.
 
 ![DHCP Scope](images/DHCP2.png)
 ![DHCP Scope](images/DHCP3.png)
 ![DHCP Scope](images/DHCP4.png)
 ![DHCP Scope](images/DHCP5.png)
 
- 16. Windows 10 Client VM Setup. I connected this VM with the internal adpater we created for the private network.
+### 16. Windows 10 Client VM Setup. I connected this VM with the internal adpater we created for the private network.
 
 ![Windows 10 Client](images/CLIENT1.png)
 ![Windows 10 Client](images/CLIENT1(2).png)
 
- 17. Verifying that `CLIENT1` receives an IP address from the internal LAN DHCP scope and confirming that the `rakip.com` domain is reachable from the client machine.
+### 17. Verifying that `CLIENT1` receives an IP address from the internal LAN DHCP scope and confirming that the `rakip.com` domain is reachable from the client machine.
 
 ![Client DHCP](images/CMD1.png)
 ![Client DHCP](images/CMD2.png)
 ![Client DHCP](images/CMD3.png)
 
- 18. Joining CLIENT1 to the Domain so it can connect with Active Directory and receive domain policies.
+### 18. Joining CLIENT1 to the Domain so it can connect with Active Directory and receive domain policies.
 
 ![Join Domain](images/CLIENT-DC.png)
 ![Join Domain](images/CLIENT-DC2.png)
 ![Join Domain](images/CLIENT-DC3.png)
 
- 19. Verifying the DHCP lease on `RAKIPDC` and checking Active Directory Users and Computers to confirm that `CLIENT1` appears in the Computers container.
+### 19. Verifying the DHCP lease on `RAKIPDC` and checking Active Directory Users and Computers to confirm that `CLIENT1` appears in the Computers container.
 
 ![DHCP Lease](images/DCHP-VERIFICATION.png)
 ![DHCP Lease](images/DC-VERIFICATION.png)
 
- 20 . Bulk User Creation with PowerShell. Opening PShell as an admin and running the script.
+### 20 . Bulk User Creation with PowerShell. Opening PShell as an admin and running the script.
 
 ![Bulk User Creation](images/BULK1.png)
 ![Bulk User Creation](images/BULK2.png)
 ![Bulk User Creation](images/BULK3.png)
 ![Bulk User Creation](images/BULK4.png)
 
- 21. Created Users in Active Directory
+### 21. Created Users in Active Directory
 
 ![Created Users](images/BULK5.png)
 ![Created Users](images/BULK6.png)
 ![Created Users](images/BULK7.png)
 
- 22. Connecting to `CLIENT1` as one of the users I created with the script above. Notepad name `Rakip me` gets automatically created as user `rme`.
+### 22. Connecting to `CLIENT1` as one of the users I created with the script above. Notepad name `Rakip me` gets automatically created as user `rme`.
 
 ![PowerShell User](images/RME1.png)
 ![PowerShell User](images/RME2.png)
 
- 23. Creating Security Groups for file access control and adding at least one user to each group for permission testing.
+### 23. Creating Security Groups for file access control and adding at least one user to each group for permission testing.
 
 ![Security Groups](images/SECGROUPS1.png)
 ![Security Groups](images/SECGROUPS2.png)
 
- 24. Creating department folders inside `CompanyFiles` and sharing the main folder so domain users can access the permitted folders over the network.
+### 24. Creating department folders inside `CompanyFiles` and sharing the main folder so domain users can access the permitted folders over the network.
 
 ![Department Folders](images/SHARED1.png)
 ![Shared File](images/SHARED2.png)
