@@ -264,11 +264,11 @@ The monitoring is focused on:
 ![Authorized Folder Access](images/TEST2.png)
 ![Authorized Folder Access](images/TEST3.png)
 
-### 27. Navigating to Group Policy Management to create my GPOs
+### 27. Navigating to Group Policy Management to create my GPOs.
 
 ![Group Policy Management](images/GPOs.png)
 
-### 28. GPO: Password & Account restrictions
+### 28. GPO: Screen Lock Policy.Password & Account restrictions.
 
 ![GPO](images/PASS1.png)
 ![GPO](images/PASS2.png)
@@ -292,13 +292,11 @@ The monitoring is focused on:
 ![Wallpaper GPO](images/WALL3.png)
 ![Wallpaper GPO](images/WALL4.png)
 
-### 32. GPO: Screen Lock Policy
+### 32. GPO: Banner when the user tries to log in.
 
-![Screen Lock GPO](images/screen-lock-gpo.png)
-
-### 33. Audit Policy Configuration
-
-![Audit Policy](images/audit-policy-configuration.png)
+![Banner](images/BAN1.png)
+![Banner](images/BAN2.png)
+![Banner](images/BAN3.png)
 
 ### 34. Event Viewer Security Logs
 
