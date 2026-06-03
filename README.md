@@ -278,19 +278,19 @@ The monitoring is focused on:
 ![GPO](images/PASS3.png)
 ![GPO](images/PASS4.png)
 
-### 30. GPO: Control Panel and Settings Restriction. Also testing them to see if the are applied correctly.
+### 30. GPO: Control Panel and Settings Restriction. Also testing GPO.
 
 ![Control Panel and Settigns GPO](images/SET1.png)
 ![Control Panel and Settigns GPO](images/SET2.png)
 ![Control Panel and Settings GPO](images/SET3.png)
-
-### 31. Testing the Control Panel and Settigns GPO.
-
 ![Control Panel and Settings GPO](images/SET4.png)
 
-### 32. GPO: Centralized Wallpaper
+### 31. GPO: Centralized Wallpaper.Configuring a centralized wallpaper GPO using the shared network path `\\RAKIPDC\Shares\Wallpaper` so selected domain users receive the same desktop background.
 
-![Wallpaper GPO](images/centralized-wallpaper-gpo.png)
+![Wallpaper GPO](images/WALL1.png)
+![Wallpaper GPO](images/WALL2.png)
+![Wallpaper GPO](images/WALL3.png)
+![Wallpaper GPO](images/WALL4.png)
 
 ### 32. GPO: Screen Lock Policy
 
