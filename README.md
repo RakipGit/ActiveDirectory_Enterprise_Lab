@@ -300,11 +300,11 @@ The monitoring is focused on:
 
 ### 33. GPO: Security Logs. Helps us reviewing Windows Security logs in Event Viewer to monitor authentication activity, account changes, and other important security events in the domain environment.
 
-![Audit GPO](images/SEC1.png.png)
-![Audit GPO](images/SEC2.png.png)
-![Audit GPO](images/SEC3.png.png)
-![Audit GPO](images/SEC4.png.png)
-![Event Viewer Logs](images/EVENT-VIEWER.png.png)
+![Audit GPO](images/SEC1.png)
+![Audit GPO](images/SEC2.png)
+![Audit GPO](images/SEC3.png)
+![Audit GPO](images/SEC4.png)
+![Event Viewer Logs](images/EVENT-VIEWER.png)
 
 </details>
 
