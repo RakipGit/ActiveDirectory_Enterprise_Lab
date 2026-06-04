@@ -255,7 +255,7 @@ The monitoring is focused on:
 ![NTFS Permissions](images/NTFS3.png)
 ![NTFS Permissions](images/NTFS4.png)
 
-### 26. Testing folder permissions from `CLIENT1` by logging in as a domain user and confirming that only the authorized shared folder is accessible.
+### 26. Testing folder permissions from `CLIENT1` by logging as a domain user and confirming that only the authorized shared folder is accessible.
 
 ![Authorized Folder Access](images/TEST1.png)
 ![Authorized Folder Access](images/TEST2.png)
