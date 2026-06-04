@@ -141,7 +141,7 @@ The monitoring is focused on:
 ### 4. Configuring a static IP address on the Ethernet WAN adapter of `RAKIPDC` to support AD DS, DNS, DHCP, and NAT/RRAS services.
 
 ![Static IP Configuration](images/StaticIP-EthernetWAN.png)
-![Static IP Configuration](images/StaticIP-EthernetWAN(2).png)
+![Static IP Configuration](images/STATIC-EXT.png)
 
 ### 5. Installing Active Directory Domain Services.
 
