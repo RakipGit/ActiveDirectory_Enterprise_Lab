@@ -178,6 +178,7 @@ The monitoring is focused on:
 
 ### 12. Adding an internal adapter to `RAKIPDC` and giving it a static IP for the private network.
 
+![Internal Adapter](images/INTERNAL-SW4.png)
 ![Internal Adapter](images/INTERNAL-SW3.png)
 ![Internal Adapter](images/STATIC-INT.png)
 
