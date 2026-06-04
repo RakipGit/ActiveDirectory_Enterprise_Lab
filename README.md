@@ -179,7 +179,7 @@ The monitoring is focused on:
 ### 12. Adding an internal adapter to `RAKIPDC` and giving it a static IP for the private network.
 
 ![Internal Adapter](images/INTERNAL-SW3.png)
-![Internal Adapter](images/STATIC-INT.png.png)
+![Internal Adapter](images/STATIC-INT.png)
 
 ### 13. Configuring NAT/RRAS and selecting the Ethernet WAN adapter as the public interface for the `RAKIPDC` so it can route internal client traffic to the internet.
 
