@@ -310,7 +310,10 @@ The monitoring is focused on:
 
 ![SHARDE FOLDER AUDITING](images/FOLDER-AUDITING.png)
 
-### 36. 
+### 36. Reviewing Windows Security logs in Event Viewer to verify that audit events are being recorded for logons, account changes, group membership changes, and shared folder access activity.
+
+![EVENT VIEWER AUDITING](images/EVENT-VIEWER-RESULTS.png)
+
 
 </details>
 
