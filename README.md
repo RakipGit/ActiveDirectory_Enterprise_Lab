@@ -302,6 +302,11 @@ The monitoring is focused on:
 ![Audit GPO](images/SEC2.png)
 ![Audit GPO](images/SEC3.png)
 ![Audit GPO](images/SEC4.png)
+
+### 34. I linked this GPO to my domain and forced an group policy update from the cmd in both DC and my CLIENT1.
+![CMD GPO UPDATE](images/CMD-EVENTVIEWER.png)
+
+
 ![Event Viewer Logs](images/EVENT-VIEWER-RESULTS.png)
 
 </details>
