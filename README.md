@@ -351,8 +351,9 @@ The new disk E now in up:
 ![DSRM](images/DSRM.png)
 ![RESET DSRM PASSWORD](images/CMD-DSRM-PASS.png)
 
-Then I choose the Safe Boot,Active Directory repair and resart the VM 
+Then I choose the Safe Boot,Active Directory repair and resart the VM : 
 
+![SAFE BOOT / AD REPAIR ](images/SAFEBOOT-ENABLED.png)
 
 </details>
 
