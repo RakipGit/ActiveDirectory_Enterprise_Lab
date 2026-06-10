@@ -321,16 +321,25 @@ The monitoring is focused on:
 
 ### 38. Bringing the new disk online, initializing it and preparing it for use in Windows Disk Management.
 
-![DISK NEW VOLUME](images/NewVolumeDISK.png)
 ![DISK MANAGEMENT](images/DISKMANA2.png)
 ![DISK ONLINE](images/DISKONLINE.png)
 ![DISK INITIALIZE](images/INITIALIZEDISK.png)
 ![DISK INITIALIZE](images/GTP-DISK.png)
 
+Creating a new volume for the E disk :
+
+![DISK NEW VOLUME](images/NewVolumeDISK.png)
+![DISK NEW VOLUME](images/VOLUME2.png)
+
+
+
 The new disk E now in up:
 
-
 ![DISK INITIALIZE](images/NEWDISK-E.png)
+
+
+
+
 
 </details>
 
