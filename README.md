@@ -363,6 +363,10 @@ Disabling the safe boot and restaring the VM :
 
 ![SAFE BOOT / AD REPAIR ](images/DISABLE-SAFEBOOT.png)
 
+### 43. Verifying Domain Recovery.Logging back into the domain after the restore process and checking Active Directory Users and Computers to confirm that the domain environment was working correctly.
+
+![DC AND ADUC AFTER BACKUPT RECOVERY](images/SERVERMANAGER.png)
+![DC AND ADUC AFTER BACKUPT RECOVERY](images/ADUC-AFTER.png)
 
 </details>
 
