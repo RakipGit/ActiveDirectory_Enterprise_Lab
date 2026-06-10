@@ -329,7 +329,7 @@ The monitoring is focused on:
 Creating a new volume for the E disk :
 
 ![DISK NEW VOLUME](images/NewVolumeDISK.png)
-![DISK NEW VOLUME](images/VOLUME2.png)
+![DISK NEW VOLUME](images/WIZARD-DISK.png)
 
 
 The new disk E now in up:
@@ -341,10 +341,18 @@ The new disk E now in up:
 
 ![FEATURE BACKUP](images/BACKUP-FEATURE.png)
 
-### 41. Creating a System State Backup
+### 40. Creating a System State Backup
 
 ![BACKUP](images/BACKUP-COMPLETED.png)
 ![BACKUP](images/BACKUP-COMPLETED2.png)
+
+### 41. Resetting the DSRM Administrator password with `ntdsutil` before booting into Directory Services Restore Mode to test the Active Directory recovery process.
+
+![DSRM](images/DSRM.png)
+![RESET DSRM PASSWORD](images/CMD-DSRM-PASS.png)
+
+Then I choose the safe rebot
+
 
 </details>
 
