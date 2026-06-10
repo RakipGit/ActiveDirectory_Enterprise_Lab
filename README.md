@@ -327,7 +327,9 @@ The monitoring is focused on:
 ![DISK INITIALIZE](images/INITIALIZEDISK.png)
 ![DISK INITIALIZE](images/GTP-DISK.png)
 
-Then new disk now in up:
+The new disk E now in up:
+
+
 ![DISK INITIALIZE](images/NEWDISK-E.png)
 
 </details>
