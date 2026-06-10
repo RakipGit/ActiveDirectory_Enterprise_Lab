@@ -314,6 +314,10 @@ The monitoring is focused on:
 
 ![EVENT VIEWER AUDITING](images/EVENT-VIEWER-RESULTS.png)
 
+### 37. Adding a second virtual disk to the Domain Controller VM to store the Active Directory backup separately from the main system disk.
+
+![DISK CREATION](images/DISK1.png)
+![DISK CREATION](images/DISK2.png)
 
 </details>
 
