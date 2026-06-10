@@ -134,7 +134,7 @@ The monitoring is focused on:
 
 ## Screenshots
 
-![Active Directory Lab Architecture](images/AD-LAB-ARCHITECTURE.png)
+![Active Directory Lab Architecture](images/LAB-ARCHITECTURE.png)
 
 <details>
 <summary>🔎 View Full Lab Walkthrough (Screenshots)</summary>
