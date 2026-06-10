@@ -1,8 +1,8 @@
 ![Status](https://img.shields.io/badge/status-complete-brightgreen)
 
-## Active Directory Enterprise Lab: AD DS, NAT, DHCP, GPOs, RBAC File Shares and Security Auditing
+## Active Directory Enterprise Lab: AD DS, NAT, DHCP, GPOs, RBAC File Shares, Security Auditing and Backup
 
-A Windows Server lab that demonstrates the deployment and administration of an Active Directory environment using Hyper-V, Widnows Server 2019, AD DS, DNS, DHCP, NAT/RRAS, Group Policies, RBAC file sharing and Windows security auditing (Event Viewer).
+A Windows Server lab that demonstrates the deployment and administration of an Active Directory environment using Hyper-V, Widnows Server 2019, AD DS, DNS, DHCP, NAT/RRAS, Group Policies, RBAC file sharing, Windows security auditing (Event Viewer) and Active Directory System State backup and recovery.
 
 ---
 
