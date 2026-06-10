@@ -346,12 +346,12 @@ The new disk E now in up:
 ![BACKUP](images/BACKUP-COMPLETED.png)
 ![BACKUP](images/BACKUP-COMPLETED2.png)
 
-### 41. Resetting the DSRM Administrator password with `ntdsutil` before booting into Directory Services Restore Mode to test the Active Directory recovery process.
+### 41. Resetting the DSRM Administrator password with ntdsutil before booting into Directory Services Restore Mode to test the Active Directory recovery process.
 
 ![DSRM](images/DSRM.png)
 ![RESET DSRM PASSWORD](images/CMD-DSRM-PASS.png)
 
-Then I choose the safe rebot
+Then I choose the Safe Boot,Active Directory repair and resart the VM 
 
 
 </details>
