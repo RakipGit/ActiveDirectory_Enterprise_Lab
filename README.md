@@ -319,6 +319,13 @@ The monitoring is focused on:
 ![DISK CREATION](images/DISK1.png)
 ![DISK CREATION](images/DISK2.png)
 
+### 38. Bringing the new disk online, initializing it and preparing it for use in Windows Disk Management.
+
+![DISK NEW VOLUME](images/NewVolumeDISK.png)
+![DISK MANAGEMENT](images/DISKMANA2.png)
+![DISK ONLINE](images/DISKONLINE.png)
+![DISK INITIALIZE](images/INITIALIZEDISK.png)
+
 </details>
 
 ---
