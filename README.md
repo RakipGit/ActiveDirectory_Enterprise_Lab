@@ -355,6 +355,15 @@ Then I choose the Safe Boot,Active Directory repair and resart the VM :
 
 ![SAFE BOOT / AD REPAIR ](images/SAFEBOOT-ENABLED.png)
 
+### 42. Restoring the System State Backup
+
+![RECOVER BACKUP ](images/SYSTEM-RECOVERY.png)
+
+Disabling the safe boot and restaring the VM : 
+
+![SAFE BOOT / AD REPAIR ](images/DISABLE-SAFEBOOT.png)
+
+
 </details>
 
 ---
