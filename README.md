@@ -114,6 +114,22 @@ The monitoring is focused on:
 * User management events.
 * Group membership changes.
 * File/share access activity.
+
+### 10. Active Directory Backup and Recovery
+
+* Added a second virtual disk to the RAKIPDC Domain Controller VM for backup storage.
+* Initialized the new disk in Disk Management and created a new volume.
+* Assigned the backup volume the drive letter E: and named it AD_Backup.
+* Installed the Windows Server Backup feature from Server Manager.
+* Created an Active Directory System State backup.
+* Stored the backup on the disk E:.
+* Reset the DSRM Administrator password using ntdsutil because I did not remember the original recovery password.
+* Booted the Domain Controller into Directory Services Restore Mode.
+* Logged in locally as RAKIPDC\Administrator using the DSRM password.
+* Restored the System State backup using Windows Server Backup.
+* Returned the Domain Controller to normal boot.
+* Logged back into the domain and checked Active Directory Users and Computers to confirm that the AD environment was working correctly after recovery.
+
 ---
 
 ## Screenshots
