@@ -331,6 +331,9 @@ Creating a new volume for the E disk :
 ![DISK NEW VOLUME](images/NewVolumeDISK.png)
 ![DISK NEW VOLUME](images/VOLUME2.png)
 
+### 39. Installing Windows Server Backup
+
+![FEATURE BACKUP](images/BACKUP-FEATURE.png)
 
 
 The new disk E now in up:
