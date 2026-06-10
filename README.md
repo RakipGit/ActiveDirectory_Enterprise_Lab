@@ -334,6 +334,7 @@ The monitoring is focused on:
 * Windows File Sharing
 * Event Viewer
 * Windows Security Logs
+* Windows Server Backup
 
 ---
 
@@ -361,6 +362,8 @@ The monitoring is focused on:
 * Event log monitoring.
 * Failed logon monitoring.
 * Account and group membership change monitoring.
+* Active Directory System State backup
+* Recovery testing
 
 ---
 
@@ -376,6 +379,7 @@ The monitoring is focused on:
 * Testing folder permissions from the client machine helped confirm the practical impact of access control decisions.
 * Applying GPOs showed how administrators can centrally enforce user restrictions, desktop settings, and security configurations.
 * Configuring audit policies and reviewing Event Viewer logs helped me understand how Windows environments can monitor important system activities.
+* Creating and restoring an Active Directory System State backup helped me understand the importance of backup and recovery for Domain Controllers.
 
 ---
 
